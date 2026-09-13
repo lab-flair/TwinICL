@@ -2,7 +2,7 @@
 
 Resources for **TwinICL: Diagnosing Multimodal In-Context Learning through Paired Counterfactuals**.
 
-**[🤗 Dataset on Hugging Face](https://huggingface.co/datasets/zihan-xue/twinicl-bench)**
+**[🤗 Dataset on Hugging Face](https://huggingface.co/datasets/lab-flair/twinicl-bench)**
 
 ## Overview
 
@@ -14,7 +14,7 @@ This repository serves as the central resource page for the project.
 
 ## Dataset
 
-The dataset is available on **[Hugging Face](https://huggingface.co/datasets/zihan-xue/twinicl-bench)**.
+The dataset is available on **[Hugging Face](https://huggingface.co/datasets/lab-flair/twinicl-bench)**.
 
 The current release contains:
 
@@ -24,7 +24,7 @@ The current release contains:
 
 Each row contains the task name, rendering variant, text or image input, and expected text answer. Corresponding examples appear in the same row order within each task's variant files.
 
-See the [dataset documentation](https://huggingface.co/datasets/zihan-xue/twinicl-bench/blob/main/README.md) for field descriptions, rendering details, and answer conventions.
+See the [dataset documentation](https://huggingface.co/datasets/lab-flair/twinicl-bench/blob/main/README.md) for field descriptions, rendering details, and answer conventions.
 
 ### Load the dataset
 
@@ -39,7 +39,7 @@ Load the dataset in Python:
 ```python
 from datasets import load_dataset
 
-data = load_dataset("zihan-xue/twinicl-bench", split="test")
+data = load_dataset("lab-flair/twinicl-bench", split="test")
 ```
 
 The current release places all examples in a single split named `test`. These rows are individual examples; loading them does not construct the demonstration-and-query prompts used for in-context learning evaluation.
